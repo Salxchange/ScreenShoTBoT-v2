@@ -8,20 +8,20 @@ from ..screenshotbot import ScreenShotBot
 @ScreenShotBot.on_message(filters.private & filters.command("start"))
 async def start(c, m, cb=False):
     owner_id = Config.AUTH_USERS[0]
-    username = 'Dhalapathy_vijay'
-    mention = '[Sharvin 710](https://t.me/Dhalapathy_vijay)'
+    username = 'Snowball'
+    mention = '[❄️Snowball❄️](https://t.me/Snowball_Official)'
     try:
         owner = await c.get_users(owner_id)
-        username = owner.username if owner.username else 'Ns_AnoNymous'
+        username = owner.username if owner.username else 'Snowball_Official'
         mention = owner.mention(style="md")
     except Exception as e:
         print(e)
 
     BUTTONS = [[
-        InlineKeyboardButton("My Father 🧔", url=f"https://t.me/{username}"),
-        InlineKeyboardButton("Updates Channel 🔰", url="https://t.me/s_bots")
+        InlineKeyboardButton("My Father 🧔", url=f"https://t.me/Snowball_Official"),
+        InlineKeyboardButton("Updates Channel 🔰", url="https://t.me/Roku_bots")
         ],[
-        InlineKeyboardButton("Movie Group😎", url="https://t.me/new_cinema_mall")
+        InlineKeyboardButton("🚀 Powered By", url="https://t.me/Roofiverse")
         ],[
         InlineKeyboardButton("Help ⁉️", callback_data="help"),
         InlineKeyboardButton("Settings ⚙", callback_data="set+settings")
